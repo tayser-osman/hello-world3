@@ -13,6 +13,10 @@ app.get('/about', function(req, res, next) {
 	res.send('About page');
 });
 
+app.get('/services', function(req, res, next) {
+	res.send('Services page');
+});
+
 app.get('/products', function(req, res, next) {
 	res.send('Products page');
 });
