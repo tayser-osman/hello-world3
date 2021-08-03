@@ -26,7 +26,7 @@ app.get('/products', function(req, res, next) {
 });
 
 app.get('/products/:id', function(re, res, next) {
-	res.send(`Product ${id} page`);
+	res.send(`Product ${req.params.id} page`);
 });
 
 app.get('/faq', function(req, res, next) {
