@@ -25,4 +25,8 @@ app.get('/faq', function(req, res, next) {
 	res.send('FAQ page');
 });
 
+app.get('/terms', function(req, res, next) {
+	res.send('Terms page');
+});
+
 app.listen(3000, () => console.log('server is running on port 3000..'));
