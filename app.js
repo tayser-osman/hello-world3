@@ -54,6 +54,10 @@ app.get('/privacy', function(req, res, next) {
 	res.send('Privacy page');
 });
 
+app.get('/carriers', function(req, res, next) {
+	re.send('News page');
+});
+
 app.get('/admin', function(req, res, next) {
 	res.send('Admin page');
 });
