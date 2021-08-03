@@ -17,6 +17,10 @@ app.get('/services', function(req, res, next) {
 	res.send('Services page');
 });
 
+app.get('/services/:id', function(req, res, next) {
+	res.send(`Service ${req.params.id} page`);
+});
+
 app.get('/products', function(req, res, next) {
 	res.send('Products page');
 });
