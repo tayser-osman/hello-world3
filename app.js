@@ -1,8 +1,10 @@
 const express = require('express');
 const logger = require('morgan');
+const responseTime = require('response-time');
 
 const app = express();
 app.use(logger('dev'));
+app.use(responseTime());
 
 app.get('/', function(req, res, next) {
 	res.send('Homepage');
