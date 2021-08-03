@@ -17,4 +17,8 @@ app.get('/products', function(req, res, next) {
 	res.send('Products page');
 });
 
+app.get('/products/:id', function(re, res, next) {
+	res.send(`Product ${id} page`);
+});
+
 app.listen(3000, () => console.log('server is running on port 3000..'));
