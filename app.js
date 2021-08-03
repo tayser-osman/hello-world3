@@ -13,4 +13,8 @@ app.get('/about', function(req, res, next) {
 	res.send('About page');
 });
 
+app.get('/products', function(req, res, next) {
+	res.send('Products page');
+});
+
 app.listen(3000, () => console.log('server is running on port 3000..'));
