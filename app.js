@@ -54,4 +54,8 @@ app.get('/privacy', function(req, res, next) {
 	res.send('Privacy page');
 });
 
+app.get('/admin', function(req, res, next) {
+	res.send('Admin page');
+});
+
 app.listen(3000, () => console.log('server is running on port 3000..'));
