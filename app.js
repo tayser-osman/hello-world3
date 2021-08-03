@@ -29,4 +29,8 @@ app.get('/terms', function(req, res, next) {
 	res.send('Terms page');
 });
 
+app.get('/privacy', function(req, res, next) {
+	res.send('Privacy page');
+});
+
 app.listen(3000, () => console.log('server is running on port 3000..'));
