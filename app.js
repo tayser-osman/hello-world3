@@ -33,6 +33,18 @@ app.get('/products/:id', function(re, res, next) {
 	res.send(`Product ${req.params.id} page`);
 });
 
+app.use('/partners', function(req, res, next) {
+	res.send('Partners page');
+});
+
+app.get('/contact-us', function(req, res, next) {
+	res.send('Contact us page');
+});
+
+app.get('/about', function(req, res, next) {
+	res.send('About page');
+});
+
 app.get('/faq', function(req, res, next) {
 	res.send('FAQ page');
 });
