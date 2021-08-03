@@ -5,14 +5,6 @@ app.get('/', function(req, res, next) {
 	res.send('Homepage');
 });
 
-app.get('/contact-us', function(req, res, next) {
-	res.send('Contact us page');
-});
-
-app.get('/about', function(req, res, next) {
-	res.send('About page');
-});
-
 app.get('/services', function(req, res, next) {
 	res.send('Services page');
 });
