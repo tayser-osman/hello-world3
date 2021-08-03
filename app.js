@@ -1,5 +1,8 @@
 const express = require('express');
+const logger = require('morgan');
+
 const app = express();
+app.use(logger('dev'));
 
 app.get('/', function(req, res, next) {
 	res.send('Homepage');
